@@ -262,6 +262,7 @@ public class TrainingHelper {
 
         processHandler = new ProcessHandler();
         processHandler.setFetchProcessConsole(true);
+        System.out.println(command);
         processHandler.startProcess("calamari-cross-fold-train", command, false);
 
         trainingRunning = false;

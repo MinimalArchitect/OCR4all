@@ -321,6 +321,7 @@ public class RecognitionHelper {
 
         processHandler = new ProcessHandler();
         processHandler.setFetchProcessConsole(true);
+        System.out.println(command);
         processHandler.startProcess("calamari-predict", command, false);
 
         // Execute progress update to fill processState data structure with correct values
